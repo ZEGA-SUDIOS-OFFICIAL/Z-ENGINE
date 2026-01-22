@@ -1,0 +1,17 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Ensure C++ and Cython source files always use LF (Linux) endings
+*.cpp text eol=lf
+*.h text eol=lf
+*.pyx text eol=lf
+*.py text eol=lf
+
+# Treat compiled binaries and shared objects as binary (don't try to merge them)
+*.so binary
+*.o binary
+*.a binary
+*.pyc binary
+
+# Ignore build folders for GitHub diffs
+build/* binary
